@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>CHAPTER 31-34:</h1>
+        <script>
+
+        var name = prompt("Enter Your Name ")
+        alert("AS SALAM ALIKIUM "+name + ","+ "GOOD MORNING, AFTERNOON, EVENING OR NIGHT")
+        var date_of_brith= new Date("december 27,1999")
+        var now = new Date();
+        var date_of_brith_time = date_of_brith.getTime();
+        var now_time = now.getTime();
+        var time = now_time - date_of_brith_time;
+        var time_diff = time/(1000 * 60 * 60 * 24 *365);
+        var days =time/(1000 * 60 * 60 * 24);
+        var time_second =time/(1000 * 60);
+        var time_minute = time/(1000 * 60*60);
+        var time_hour=time/(24)
+        var month = (((time/(1000*60*60*24)/365)*12)%12).toFixed(0);
+
+        alert("YEAR "+Math.floor(time_diff));
+        alert("MILLISECOND "+time)
+        alert("SECOND "+time_second)
+        alert("DAYS "+Math.floor(days));
+        alert("MONTHS "+month);
+
+        document.write("You are " + Math.floor(time_diff)+" Years " + month + " Month " + Math.floor(days) + " Days " + time_hour +" Hours " +time_minute +" Minutes " +time_second+" Seconds Old " )
+        
+
+
+        
+        
+        
+        </script>
+</body>
+</html>

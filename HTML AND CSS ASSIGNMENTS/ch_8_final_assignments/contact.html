@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:skyblue;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  float: left;
+  
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-top: 75px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.para{
+    display: inline;
+}
+select{
+    border-radius: 5px;
+}
+.footer{
+    background-color:skyblue;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+  <!-- THIS IS MENU BAR  -->
+        <ul>
+                <li><img src="./images/logo-color.png"></li>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="profolio.html">Profolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </ul>
+   <!-- THIS IS A MAIN CONTENT -->
+    <form action="https://www.google.com" method="GET">
+    <fieldset>
+        <legend>Your Details:</legend>
+        Name:
+        <input type="text" name="Name"><br>
+        Email:
+        <input type="email" name="Email">
+     </fieldset>
+     <fieldset>
+         <legend>Your Reviews:</legend>
+         <p class="para">How did you  how about us?</p>
+         <select>
+             <option>Google</option>
+             <option>Youtube</option>
+             <option>Facebook</option>
+         </select>
+         <p>Would you visit again?</p>
+         Yes<input type="radio" name="Visit yes">
+         No<input type="radio" name="Visit No">
+         Maybe<input type="radio" name="Maybe">
+         <h3>Comments:</h3>
+         <textarea rows="5" cols="50"></textarea><br>
+         <input type="checkbox" name="emailupdate">Sign me up for email updates<br><br>
+         <input type="submit" value="Submit review" name="submit">
+     </fieldset>
+     </form>
+     <br>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.074377368809!2d67.07118341463215!3d24.861309184053553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8c71ecf857%3A0x9386a9bf34787d68!2sPIAIC!5e0!3m2!1sen!2s!4v1572091326826!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+     
+     
+      <!-- THIS IS FOOTER -->
+     <P class="footer">Copyright © 2019. All rights reserved.</P>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>CHAPTER 18,19,20:</h1>
+    <script>
+    var courses = [];
+
+    for (var i = 0; i < 5; i++){
+    courses.push(prompt("Enter course " +(i+1) +" name"));
+    }
+
+    alert(courses);
+  
+    for(var j = 0; j < courses.length; j++){
+    courses.splice(j,1,prompt("Enter course " +(j+1) +" name",courses[j]));
+    }
+    
+    alert(courses);
+
+    
+    
+    
+    </script>
+</body>
+</html>
